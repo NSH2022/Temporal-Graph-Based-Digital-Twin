@@ -1,0 +1,8 @@
+{
+    "epoch 0": {
+        "inflow": 89801.78787163629,
+        "travel time forward": 682903.2247415782,
+        "travel time reversed": 16082.696160536634,
+        "queue length": 69197.534159377
+    }
+}
