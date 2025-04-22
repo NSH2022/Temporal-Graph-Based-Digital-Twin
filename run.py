@@ -28,7 +28,7 @@ if __name__ == '__main__':
     NET = args.NET
     N_INTERSECT = 9
     BATCH_SIZE= 10
-    EPOCHS = 1
+    EPOCHS = 20
     NO_CPUs = 20 # change according to your available resources
     NO_GPUs = 2 # change according to your available resources
 
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     
 
 
-    #---------------- load data ----------------------
+    ########### load data #################
     exp_dataset = Graph_Dataset(PROCESS_PATH)
     dataset = train_val_dataset(exp_dataset, val_split= 0.10)
     train_dataloader = DL.DataLoader(dataset['train'], batch_size=BATCH_SIZE, shuffle=True, num_workers = NO_CPUs, drop_last = True)
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     compute_errors(output)
 
 
-    # ############ plot predicted vs actual PDFs ########
+    # ############ plot estimated vs actual variables ########
     out_inf, out_tt_fwd, out_tt_rev, out_ql, out_wt = output
     plot_inflow(out_inf, BATCH_SIZE)
     plot_travel_time_reversed(out_tt_rev, BATCH_SIZE)
