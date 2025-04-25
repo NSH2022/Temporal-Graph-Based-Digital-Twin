@@ -1,14 +1,14 @@
 # Temporal Graph-based Digital Twin (TGDT)
 
-A repository for implementation of *TDGT: A Temporal Graph-based Digital Twin for Traffic Urban Corridors* paper.
+A repository for implementation of *TDGT: A Temporal Graph-based Digital Twin for Urban Traffic Corridors* paper.
 
-In this work, we introduce a digital twin to urban traffic corridors for modeling traffic volumes and Measures of Effectiveness (MoEs) at the intersection level and corridor level altogether simultaneously based on Temporal and dynamic graph neural networks (TGNNs). These models are able to provide a fast but optimized and accurate alternative to existing microscopic simulators with many additional advantages. The model is flexible and can be trained on urban corridors with any number and topology of intersections. The model can compute MoEs for each phase of movement and each direction of arterial movement simultaneously. Graph features include basic traffic variables as input parameters including *signal timing plan parameters*, *driver behaviors* and *turning movement count*, *pair-wise distance between intersections*, and *ingress traffic volumes to corridor*.
-
-
+In this work, we introduce a digital twin to urban traffic corridors for modeling traffic volumes and Measures of Effectiveness (MoEs) at the intersection level and corridor level altogether simultaneously based on Temporal and dynamic graph neural networks (TGNNs). These models are able to provide a fast but optimized and accurate alternative to existing microscopic simulators with many additional advantages. The model is flexible and can be trained on urban corridors with any number and topology of intersections. The model can compute MoEs for each phase of movement and each direction of arterial movement simultaneously. Graph features include basic traffic variables as input parameters, including *signal timing plan parameters*, *driver behaviors*, and *turning movement count*, *pair-wise distance between intersections*, and *ingress traffic volumes to corridor*.
 
 
 
-## The inputs and outputs of TGDT framework
+
+
+## The inputs and outputs of the TGDT framework
 -----
 ![alt text](images/corridor.png)
 
@@ -17,7 +17,7 @@ In this work, we introduce a digital twin to urban traffic corridors for modelin
 
 ## Experiments
 -----
-you can run the code to train and reproduce the result with default settings using
+You can run the code to train and reproduce the result with default settings using
 ``python run.py`` 
 
 Model's state dictionary and loss values will be saved in ``models`` directory. The results of the training including plots, error values  will be saved in ``results`` directory.
@@ -28,7 +28,7 @@ Model's state dictionary and loss values will be saved in ``models`` directory. 
 
 ## Dataset
 -----
-Total number of 200 graph data samples are provided in ``data`` directory.
+A total number of 200 graph data samples are provided in ``data`` directory.
 
 
 ## Requirements
