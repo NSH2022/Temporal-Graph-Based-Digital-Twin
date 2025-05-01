@@ -20,7 +20,7 @@ In this work, we introduce a digital twin to urban traffic corridors for modelin
 You can run the code to train and reproduce the result with default settings using
 ``python run.py`` 
 
-Model's state dictionary and loss values will be saved in ``models`` directory. The results of the training including plots, error values  will be saved in ``results`` directory.
+Model's state dictionary and loss values will be saved in ``models`` directory. The results of the training, including plots, error values,  will be saved in ``results`` directory.
 
 ![alt text](images/results.png)
 
@@ -45,8 +45,16 @@ A total number of 200 graph data samples are provided in ``data`` directory.
 
 ## Citations
 -----
-If you find our work useful in your research, please cite the following paper:
+If you find our work useful in your research, please cite the following pre-print version available on arXiv:
 ```
-@article{
+@misc{yousefzadeh2025tgdt,
+  title        = {TGDT: A Temporal Graph-based Digital Twin for Urban Traffic Corridors},
+  author       = {Nooshin Yousefzadeh and Rahul Sengupta and Sanjay Ranka},
+  year         = {2025},
+  eprint       = {2504.18008},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG},
+  doi          = {10.48550/arXiv.2504.18008},
+  url          = {https://arxiv.org/abs/2504.18008}
 }
 ```
